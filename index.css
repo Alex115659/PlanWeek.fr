@@ -1,0 +1,52 @@
+body {
+    background-image: url(./Untitled\ \(26\).png);
+}
+
+.main-container {
+    display: flex;
+    justify-content: space-around;
+    border: 1px outset yellow;
+    max-width: 100%;
+    height: auto;
+    background-color: yellow;
+    border-radius: 10px;
+}
+.main-container div {
+    border: 1px solid green;    
+    max-width: auto;
+    height: auto;
+    margin: 20px;
+    text-align: center;
+    border-radius: 6px;
+}
+
+.main-container div button {
+    background: none;
+    border: 1px solid green;
+    border-radius: 5px;
+    margin:5px
+}
+.main-container div input {
+    margin-left: 3px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+}
+
+button {
+    cursor: pointer;
+}
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Расстояние между блоками */
+}
+
+.main-container div {
+    flex: 1 1 calc(33.33% - 20px); /* Три блока в ряд */
+}
+
+.main-container .Saturday,
+.main-container .Sunday {
+    flex: 1 1 100%; /* Занимают всю ширину */
+}
